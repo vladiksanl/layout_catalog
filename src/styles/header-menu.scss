@@ -11,6 +11,7 @@ body {
   align-items: center;
   margin: 0 auto;
   padding: 0 50px;
+  box-sizing: border-box;
 
   &__img-logo {
     display: flex;
@@ -67,13 +68,19 @@ body {
         margin-right: 0;
       }
 
-      .is-active {
+      &:first-child {
         margin-left: 0;
+      }
+
+      .is-active {
+        line-height: 14px;
+        margin-right: 0;
         padding-left: 0;
         position: relative;
 
         color: $primary-color !important;
       }
+
       .is-active::after {
         content: '';
         position: absolute;

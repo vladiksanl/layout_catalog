@@ -10,7 +10,7 @@
 
   justify-content: center;
 
-  grid-template-columns: repeat(var(--columns-count),$card-width);
+  grid-template-columns: repeat(var(--columns-count), $card-width);
 
   @media (min-width: 488px) {
     --columns-count: 2;
