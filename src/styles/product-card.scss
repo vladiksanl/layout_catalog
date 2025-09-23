@@ -5,24 +5,23 @@
 
   display: grid;
 
-  gap: 46px 48px;
+  gap: 48px 4px;
   padding: 50px 40px;
 
   justify-content: center;
 
-  grid-template-columns: repeat(var(--columns-count), $card-width);
+  grid-template-columns: repeat(var(--columns-count, 1fr));
 
-  @media (min-width: 488px){
-   --columns-count: 2;
+  @media (min-width: 488px) {
+    --columns-count: 2;
   }
 
-  @media (min-width: 768px){
-   --columns-count: 3;
+  @media (min-width: 768px) {
+    --columns-count: 3;
   }
 
-
-  @media (min-width: 1024px){
-   --columns-count: 4;
+  @media (min-width: 1024px) {
+    --columns-count: 4;
   }
 
   .card {
@@ -31,6 +30,7 @@
     font-style: normal;
     font-variation-settings: 'wdth' 100;
 
+    position: relative;
     box-sizing: border-box;
     padding: 32px 16px 16px;
     width: $card-width;
@@ -53,6 +53,7 @@
       transform: scale(1.2);
       .card__info-content {
         color: $card-color-hover;
+        z-index: 1;
       }
     }
     &__imac {
@@ -126,7 +127,7 @@
         border: 1px solid $button-color;
         background-color: #fff;
         .card__button-text {
-          color: #00acdc;
+          color: $primary-color;
         }
       }
     }

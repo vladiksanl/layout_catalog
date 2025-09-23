@@ -67,7 +67,7 @@ body {
         margin-right: 0;
       }
 
-      &:first-child {
+      .is-active {
         margin-left: 0;
         padding-left: 0;
         position: relative;
@@ -75,7 +75,7 @@ body {
           color: $primary-color !important;
         }
       }
-      &:first-child::after {
+      .is-active::after {
         content: '';
         position: absolute;
         width: 100%;
