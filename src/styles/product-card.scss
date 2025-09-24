@@ -96,41 +96,6 @@
         color: $info-color;
       }
     }
-    &__button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      box-sizing: border-box;
-      border-radius: 5px;
-      background-color: $button-color;
-      border: 1px solid $button-color;
-      transition:
-        background-color 0.3s,
-        color 0.3s;
-
-      &-text {
-        height: 100%;
-        width: 100%;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 1);
-        text-transform: uppercase;
-        font-weight: 700;
-        text-decoration: none;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      &:hover {
-        border: 1px solid $button-color;
-        background-color: #fff;
-        .card__button-text {
-          color: $primary-color;
-        }
-      }
-    }
 
     &__review-container {
       display: flex;
@@ -144,6 +109,33 @@
         font-weight: 400;
         line-height: 14px;
         color: $info-color;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: $button-color;
+      border: 1px solid $button-color;
+      transition:
+        background-color 0.3s,
+        color 0.3s;
+
+      font-size: 14px;
+      color: rgba(255, 255, 255, 1);
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 16px;
+
+      &:hover {
+        border: 1px solid $button-color;
+        background-color: #fff;
+        color: $primary-color;
       }
     }
   }
